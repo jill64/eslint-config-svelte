@@ -1,6 +1,6 @@
 {
   "name": "@jill64/eslint-config-svelte",
-  "description": "",
+  "description": "🔹Pre-Defined ESLint Flat Config for Svelte",
   "version": "0.0.0",
   "type": "module",
   "main": "dist/index.js",
@@ -27,7 +27,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "keywords": [],
+  "keywords": [
+    "config",
+    "eslint",
+    "svelte"
+  ],
   "scripts": {
     "build": "tsc && npx publint",
     "prepack": "npm run build",
