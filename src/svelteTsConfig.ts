@@ -67,7 +67,10 @@ export const svelteTsConfig = (options?: {
       ...svelte.configs.recommended.rules
     }
   },
-  js.configs.recommended,
+  {
+    ignores: ['**/*.{ts,tsx,cts,mts,svelte}'],
+    ...js.configs.recommended
+  },
   prettier,
   // @ts-expect-error workaround until upstream update
   options?.exclude?.deprecation
