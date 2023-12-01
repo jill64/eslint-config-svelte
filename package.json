@@ -1,0 +1,61 @@
+{
+  "name": "@jill64/eslint-config-svelte",
+  "description": "🔹Pre-Defined ESLint Flat Config for Svelte",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "author": "jill64 <intents.turrets0h@icloud.com> (https://github.com/jill64)",
+  "bugs": "https://github.com/jill64/eslint-config-svelte/issues",
+  "homepage": "https://github.com/jill64/eslint-config-svelte#readme",
+  "files": [
+    "dist",
+    "!**/*.test.*",
+    "!*.test.*",
+    "!*.spec.*"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jill64/eslint-config-svelte.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "config",
+    "eslint",
+    "svelte"
+  ],
+  "scripts": {
+    "build": "tsc && npx publint",
+    "prepack": "npm run build",
+    "lint": "tsc && npx eslint . && npx depcheck",
+    "format": "npx prettier -w ."
+  },
+  "peerDependencies": {
+    "svelte": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "8.44.8",
+    "@types/eslint-config-prettier": "6.11.3",
+    "@types/eslint__js": "8.42.3",
+    "svelte": "4.2.8",
+    "typescript": "5.3.2"
+  },
+  "dependencies": {
+    "@eslint/js": "8.54.0",
+    "@typescript-eslint/eslint-plugin": "6.13.1",
+    "@typescript-eslint/parser": "6.13.1",
+    "eslint": "8.54.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-deprecation": "2.0.0",
+    "eslint-plugin-svelte": "2.35.1",
+    "svelte-eslint-parser": "0.33.1"
+  }
+}
