@@ -29,7 +29,7 @@ export default [
 ]
 ```
 
-without TypeScript
+with JavaScript
 
 ```js
 // eslint.config.js
