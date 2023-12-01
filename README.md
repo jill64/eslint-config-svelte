@@ -16,10 +16,11 @@ npm i @jill64/eslint-config-svelte
 
 ## Usage
 
+`eslint.config.js`
+
 with TypeScript
 
 ```js
-// eslint.config.js
 import { svelteTsConfig } from '@jill64/eslint-config-svelte'
 
 /** @type {import('@jill64/eslint-config-svelte').FlatConfig[]} */
@@ -32,7 +33,6 @@ export default [
 with JavaScript
 
 ```js
-// eslint.config.js
 import { svelteConfig } from '@jill64/eslint-config-svelte'
 
 /** @type {import('@jill64/eslint-config-svelte').FlatConfig[]} */
