@@ -22,7 +22,8 @@ export const svelteTsConfig = (options?: {
       'dist',
       'build',
       '*.config.{js,ts,cjs,mjs,cts,mts}',
-      '.svelte-kit'
+      '.svelte-kit',
+      '.vercel'
     ]
   },
   {

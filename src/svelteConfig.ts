@@ -20,7 +20,8 @@ export const svelteConfig = (options?: {
       'dist',
       'build',
       '*.config.{js,cjs,mjs}',
-      '.svelte-kit'
+      '.svelte-kit',
+      '.vercel'
     ]
   },
   {
