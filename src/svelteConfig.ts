@@ -19,6 +19,7 @@ export const svelteConfig = (options?: {
     ignores: options?.ignores ?? [
       'dist',
       'build',
+      'coverage',
       '*.config.{js,cjs,mjs}',
       '.svelte-kit',
       '.vercel'
