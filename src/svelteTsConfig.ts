@@ -21,6 +21,7 @@ export const svelteTsConfig = (options?: {
     ignores: options?.ignores ?? [
       'dist',
       'build',
+      'coverage',
       '*.config.{js,ts,cjs,mjs,cts,mts}',
       '.svelte-kit',
       '.vercel'
