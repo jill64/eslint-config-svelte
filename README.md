@@ -24,6 +24,15 @@ with TypeScript
 import { svelteTsConfig } from '@jill64/eslint-config-svelte'
 
 /** @type {import('@jill64/eslint-config-svelte').FlatConfig[]} */
+export default svelteTsConfig()
+```
+
+To add any configuration, configure as follows
+
+```js
+import { svelteTsConfig } from '@jill64/eslint-config-svelte'
+
+/** @type {import('@jill64/eslint-config-svelte').FlatConfig[]} */
 export default [
   ...svelteTsConfig()
   // ...
