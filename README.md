@@ -6,12 +6,6 @@
 
 🔹Pre-Defined ESLint Flat Config for Svelte
 
-## Installation
-
-```sh
-npm i @jill64/eslint-config-svelte
-```
-
 <!----- END GHOST DOCS HEADER ----->
 
 ## Usage
