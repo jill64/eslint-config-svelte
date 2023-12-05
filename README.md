@@ -8,6 +8,12 @@
 
 <!----- END GHOST DOCS HEADER ----->
 
+## Installation
+
+```sh
+npm i -D @jill64/eslint-config-svelte
+```
+
 ## Usage
 
 `eslint.config.js`
