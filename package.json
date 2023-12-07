@@ -1,7 +1,7 @@
 {
   "name": "@jill64/eslint-config-svelte",
   "description": "🔹Pre-Defined ESLint Flat Config for Svelte",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
@@ -27,6 +27,7 @@
   "keywords": [
     "config",
     "eslint",
+    "reusable",
     "svelte"
   ],
   "scripts": {
@@ -41,14 +42,14 @@
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
     "@jill64/prettier-config": "1.0.0",
-    "@types/eslint-config-prettier": "6.11.3",
-    "@types/eslint__js": "8.42.3",
     "svelte": "4.2.8",
     "typescript": "5.3.3"
   },
   "dependencies": {
     "@types/eslint": "8.44.8",
     "@eslint/js": "8.55.0",
+    "@types/eslint-config-prettier": "6.11.3",
+    "@types/eslint__js": "8.42.3",
     "@typescript-eslint/eslint-plugin": "6.13.2",
     "@typescript-eslint/parser": "6.13.2",
     "eslint": "8.55.0",
