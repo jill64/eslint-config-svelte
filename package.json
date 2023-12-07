@@ -27,6 +27,7 @@
   "keywords": [
     "config",
     "eslint",
+    "reusable",
     "svelte"
   ],
   "scripts": {
