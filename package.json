@@ -5,7 +5,12 @@
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
-  "author": "jill64 <intents.turrets0h@icloud.com> (https://github.com/jill64)",
+  "author": {
+    "name": "jill64",
+    "email": "143883742+jill64@users.noreply.github.com",
+    "url": "https://github.com/jill64",
+    "image": "https://avatars.githubusercontent.com/u/143883742?v=4"
+  },
   "bugs": "https://github.com/jill64/eslint-config-svelte/issues",
   "homepage": "https://github.com/jill64/eslint-config-svelte#readme",
   "files": [
@@ -19,7 +24,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jill64/eslint-config-svelte.git"
+    "url": "https://github.com/jill64/eslint-config-svelte.git",
+    "image": "https://opengraph.githubassets.com/d231f2b86c879463c06a2254c18bdb9d637c5dd5a22f5731c1cd6485889f81fb/jill64/eslint-config-svelte"
   },
   "publishConfig": {
     "access": "public"
