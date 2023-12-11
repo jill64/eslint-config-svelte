@@ -1,11 +1,16 @@
 {
   "name": "@jill64/eslint-config-svelte",
   "description": "🔹Pre-Defined ESLint Flat Config for Svelte",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
-  "author": "jill64 <intents.turrets0h@icloud.com> (https://github.com/jill64)",
+  "author": {
+    "name": "jill64",
+    "email": "143883742+jill64@users.noreply.github.com",
+    "url": "https://github.com/jill64",
+    "image": "https://avatars.githubusercontent.com/u/143883742?v=4"
+  },
   "bugs": "https://github.com/jill64/eslint-config-svelte/issues",
   "homepage": "https://github.com/jill64/eslint-config-svelte#readme",
   "files": [
@@ -19,7 +24,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jill64/eslint-config-svelte.git"
+    "url": "https://github.com/jill64/eslint-config-svelte.git",
+    "image": "https://opengraph.githubassets.com/d231f2b86c879463c06a2254c18bdb9d637c5dd5a22f5731c1cd6485889f81fb/jill64/eslint-config-svelte"
   },
   "publishConfig": {
     "access": "public"
@@ -50,8 +56,8 @@
     "@eslint/js": "8.55.0",
     "@types/eslint-config-prettier": "6.11.3",
     "@types/eslint__js": "8.42.3",
-    "@typescript-eslint/eslint-plugin": "6.13.2",
-    "@typescript-eslint/parser": "6.13.2",
+    "@typescript-eslint/eslint-plugin": "6.14.0",
+    "@typescript-eslint/parser": "6.14.0",
     "eslint": "8.55.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-deprecation": "2.0.0",
