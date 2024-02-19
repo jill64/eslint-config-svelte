@@ -6,6 +6,7 @@ import deprecation from 'eslint-plugin-deprecation'
 import svelte from 'eslint-plugin-svelte'
 import svelteParser from 'svelte-eslint-parser'
 import { FlatConfig } from './index.js'
+import type { Linter } from 'eslint'
 
 export const svelteTsConfig = (options?: {
   exclude?: {
@@ -13,6 +14,7 @@ export const svelteTsConfig = (options?: {
   }
   tsConfigPath?: string
   ignores?: string[]
+  svelteRules?: Linter.RulesRecord | undefined
 }): FlatConfig[] => [
   {
     files: ['**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,svelte}']
@@ -66,7 +68,8 @@ export const svelteTsConfig = (options?: {
     rules: {
       // @ts-expect-error workaround until upstream update
       ...svelte.configs.base.rules,
-      ...svelte.configs.recommended.rules
+      ...svelte.configs.recommended.rules,
+      ...options?.svelteRules
     }
   },
   {
