@@ -35,7 +35,6 @@ export const svelteTsConfig = (options?: {
       '@typescript-eslint': ts
     },
     languageOptions: {
-      // @ts-expect-error workaround until upstream update
       parser: tsParser,
       parserOptions: {
         project: [options?.tsConfigPath ?? './tsconfig.json'],
@@ -57,7 +56,6 @@ export const svelteTsConfig = (options?: {
     },
     processor: svelte.processors.svelte,
     languageOptions: {
-      // @ts-expect-error workaround until upstream update
       parser: svelteParser,
       parserOptions: {
         project: [options?.tsConfigPath ?? './tsconfig.json'],
