@@ -25,7 +25,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/eslint-config-svelte.git",
-    "image": "https://opengraph.githubassets.com/a101a7ba93a5fdcd69a730039978b1c944ef38fd95169be81e251f7de587d1ee/jill64/eslint-config-svelte"
+    "image": "https://opengraph.githubassets.com/ae68eeea7c9ed2750c829f85e929351f70cefa540e58e03e6ba61c888329e18e/jill64/eslint-config-svelte"
   },
   "publishConfig": {
     "access": "public"
