@@ -12,6 +12,12 @@
 
 <!----- END GHOST DOCS HEADER ----->
 
+# ⚠️Deprecated
+
+Currently, eslint-plugin-svelte supports FlatConfig.
+
+See https://sveltejs.github.io/eslint-plugin-svelte/user-guide/#new-config-eslint-config-js
+
 ## Installation
 
 ```sh
