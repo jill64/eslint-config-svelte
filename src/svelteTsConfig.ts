@@ -1,12 +1,12 @@
 import js from '@eslint/js'
 import ts from '@typescript-eslint/eslint-plugin'
 import tsParser from '@typescript-eslint/parser'
+import type { Linter } from 'eslint'
 import prettier from 'eslint-config-prettier'
 import deprecation from 'eslint-plugin-deprecation'
 import svelte from 'eslint-plugin-svelte'
 import svelteParser from 'svelte-eslint-parser'
 import { FlatConfig } from './index.js'
-import type { Linter } from 'eslint'
 
 export const svelteTsConfig = (options?: {
   exclude?: {
@@ -63,8 +63,8 @@ export const svelteTsConfig = (options?: {
         extraFileExtensions: ['.svelte']
       }
     },
+    // @ts-expect-error workaround until upstream update
     rules: {
-      // @ts-expect-error workaround until upstream update
       ...svelte.configs.base.rules,
       ...svelte.configs.recommended.rules,
       ...options?.svelteRules
