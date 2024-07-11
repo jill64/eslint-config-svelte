@@ -40,8 +40,8 @@ export const svelteConfig = (options?: {
         extraFileExtensions: ['.svelte']
       }
     },
+    // @ts-expect-error workaround until upstream update
     rules: {
-      // @ts-expect-error workaround until upstream update
       ...svelte.configs.base.rules,
       ...svelte.configs.recommended.rules,
       ...options?.svelteRules
