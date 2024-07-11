@@ -62,6 +62,6 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-deprecation": "3.0.0",
     "eslint-plugin-svelte": "2.40.0",
-    "svelte-eslint-parser": "0.39.2"
+    "svelte-eslint-parser": "0.40.0"
   }
 }
