@@ -42,7 +42,6 @@ export const svelteTsConfig = (options?: {
         extraFileExtensions: ['.svelte']
       }
     },
-    // @ts-expect-error workaround until upstream update
     rules: {
       ...ts.configs.base.rules,
       ...ts.configs.recommended.rules
@@ -63,7 +62,6 @@ export const svelteTsConfig = (options?: {
         extraFileExtensions: ['.svelte']
       }
     },
-    // @ts-expect-error workaround until upstream update
     rules: {
       ...svelte.configs.base.rules,
       ...svelte.configs.recommended.rules,
