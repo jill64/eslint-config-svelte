@@ -3,15 +3,11 @@ import ts from '@typescript-eslint/eslint-plugin'
 import tsParser from '@typescript-eslint/parser'
 import type { Linter } from 'eslint'
 import prettier from 'eslint-config-prettier'
-import deprecation from 'eslint-plugin-deprecation'
 import svelte from 'eslint-plugin-svelte'
 import svelteParser from 'svelte-eslint-parser'
 import { FlatConfig } from './index.js'
 
 export const svelteTsConfig = (options?: {
-  exclude?: {
-    deprecation?: boolean
-  }
   tsConfigPath?: string
   ignores?: string[]
   svelteRules?: Linter.RulesRecord | undefined
@@ -42,7 +38,6 @@ export const svelteTsConfig = (options?: {
         extraFileExtensions: ['.svelte']
       }
     },
-    // @ts-expect-error workaround until upstream update
     rules: {
       ...ts.configs.base.rules,
       ...ts.configs.recommended.rules
@@ -63,7 +58,6 @@ export const svelteTsConfig = (options?: {
         extraFileExtensions: ['.svelte']
       }
     },
-    // @ts-expect-error workaround until upstream update
     rules: {
       ...svelte.configs.base.rules,
       ...svelte.configs.recommended.rules,
@@ -74,14 +68,5 @@ export const svelteTsConfig = (options?: {
     ignores: ['**/*.{ts,tsx,cts,mts,svelte}'],
     ...js.configs.recommended
   },
-  prettier,
-  // @ts-expect-error workaround until upstream update
-  options?.exclude?.deprecation
-    ? {}
-    : {
-        plugins: {
-          deprecation
-        },
-        rules: deprecation.configs.recommended.rules
-      }
+  prettier
 ]
