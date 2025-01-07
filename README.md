@@ -2,11 +2,11 @@
 
 # @jill64/eslint-config-svelte
 
+
 <!----- BEGIN GHOST DOCS BADGES ----->
-
 <a href="https://npmjs.com/package/@jill64/eslint-config-svelte"><img src="https://img.shields.io/npm/v/@jill64/eslint-config-svelte" alt="npm-version" /></a> <a href="https://npmjs.com/package/@jill64/eslint-config-svelte"><img src="https://img.shields.io/npm/l/@jill64/eslint-config-svelte" alt="npm-license" /></a> <a href="https://npmjs.com/package/@jill64/eslint-config-svelte"><img src="https://img.shields.io/npm/dm/@jill64/eslint-config-svelte" alt="npm-download-month" /></a> <a href="https://npmjs.com/package/@jill64/eslint-config-svelte"><img src="https://img.shields.io/bundlephobia/min/@jill64/eslint-config-svelte" alt="npm-min-size" /></a>
-
 <!----- END GHOST DOCS BADGES ----->
+
 
 🔹Pre-Defined ESLint Flat Config for Svelte
 
