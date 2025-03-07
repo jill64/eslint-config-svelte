@@ -1,7 +1,7 @@
 {
   "name": "@jill64/eslint-config-svelte",
   "description": "🔹Pre-Defined ESLint Flat Config for Svelte",
-  "version": "2.0.18",
+  "version": "2.0.19",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
@@ -25,7 +25,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/eslint-config-svelte.git",
-    "image": "https://opengraph.githubassets.com/06ba5d45ae97e49ca684a11fa8678b3b3529f6f62209da38bf85c613fe675b7e/jill64/eslint-config-svelte"
+    "image": "https://opengraph.githubassets.com/fb73d7ca04ad1f5edf19c4a5a2d8f91d49873a1ed679602f572942544f7692b6/jill64/eslint-config-svelte"
   },
   "publishConfig": {
     "access": "public"
@@ -59,7 +59,7 @@
     "@typescript-eslint/eslint-plugin": "8.26.0",
     "@typescript-eslint/parser": "8.26.0",
     "eslint": "9.21.0",
-    "eslint-config-prettier": "10.0.2",
+    "eslint-config-prettier": "10.1.0",
     "eslint-plugin-svelte": "2.46.1",
     "svelte-eslint-parser": "1.0.1"
   }
