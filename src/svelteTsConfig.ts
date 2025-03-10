@@ -1,6 +1,5 @@
 import js from '@eslint/js'
-import ts from '@typescript-eslint/eslint-plugin'
-import tsParser from '@typescript-eslint/parser'
+import ts from 'typescript-eslint'
 import type { Linter } from 'eslint'
 import prettier from 'eslint-config-prettier'
 import svelte from 'eslint-plugin-svelte'
@@ -11,61 +10,41 @@ export const svelteTsConfig = (options?: {
   tsConfigPath?: string
   ignores?: string[]
   svelteRules?: Linter.RulesRecord | undefined
-}): FlatConfig[] => [
-  {
-    files: ['**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,svelte}']
-  },
-  {
-    ignores: options?.ignores ?? [
-      'dist',
-      'build',
-      'coverage',
-      '*.config.{js,ts,cjs,mjs,cts,mts}',
-      '.svelte-kit',
-      '.vercel'
-    ]
-  },
-  {
-    plugins: {
-      // @ts-expect-error workaround until upstream update
-      '@typescript-eslint': ts
+}): FlatConfig[] =>
+  ts.config(
+    js.configs.recommended,
+    ts.configs.recommended,
+    ...svelte.configs.recommended,
+    {
+      files: ['**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,svelte}']
     },
-    languageOptions: {
-      parser: tsParser,
-      parserOptions: {
-        project: [options?.tsConfigPath ?? './tsconfig.json'],
-        parser: '@typescript-eslint/parser',
-        extraFileExtensions: ['.svelte']
+    {
+      ignores: options?.ignores ?? [
+        'dist',
+        'build',
+        'coverage',
+        '*.config.{js,ts,cjs,mjs,cts,mts}',
+        '.svelte-kit',
+        '.vercel'
+      ]
+    },
+    {
+      ignores: ['**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts}'],
+      plugins: {
+        svelte
+      },
+      processor: svelte.processors.svelte,
+      languageOptions: {
+        parser: svelteParser,
+        parserOptions: {
+          project: [options?.tsConfigPath ?? './tsconfig.json'],
+          parser: '@typescript-eslint/parser',
+          extraFileExtensions: ['.svelte']
+        }
+      },
+      rules: {
+        ...options?.svelteRules
       }
     },
-    rules: {
-      ...ts.configs.base.rules,
-      ...ts.configs.recommended.rules
-    }
-  },
-  {
-    ignores: ['**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts}'],
-    plugins: {
-      svelte
-    },
-    processor: svelte.processors.svelte,
-    languageOptions: {
-      parser: svelteParser,
-      parserOptions: {
-        project: [options?.tsConfigPath ?? './tsconfig.json'],
-        parser: '@typescript-eslint/parser',
-        extraFileExtensions: ['.svelte']
-      }
-    },
-    rules: {
-      ...options?.svelteRules
-    },
-    ...svelte.configs.base,
-    ...svelte.configs.recommended
-  },
-  {
-    ignores: ['**/*.{ts,tsx,cts,mts,svelte}'],
-    ...js.configs.recommended
-  },
-  prettier
-]
+    prettier
+  ) as FlatConfig[]
