@@ -46,7 +46,6 @@ export const svelteTsConfig = (options?: {
   {
     ignores: ['**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts}'],
     plugins: {
-      // @ts-expect-error workaround until upstream update
       svelte
     },
     processor: svelte.processors.svelte,
@@ -59,10 +58,10 @@ export const svelteTsConfig = (options?: {
       }
     },
     rules: {
-      ...svelte.configs.base.rules,
-      ...svelte.configs.recommended.rules,
       ...options?.svelteRules
-    }
+    },
+    ...svelte.configs.base,
+    ...svelte.configs.recommended
   },
   {
     ignores: ['**/*.{ts,tsx,cts,mts,svelte}'],

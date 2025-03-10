@@ -1,7 +1,7 @@
 {
   "name": "@jill64/eslint-config-svelte",
   "description": "🔹Pre-Defined ESLint Flat Config for Svelte",
-  "version": "2.0.21",
+  "version": "2.1.0",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
@@ -25,7 +25,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/eslint-config-svelte.git",
-    "image": "https://opengraph.githubassets.com/3d25655ed49b374698efffff5630634074ee508a28419e54135463609dfd2b08/jill64/eslint-config-svelte"
+    "image": "https://opengraph.githubassets.com/1b9391ae629bd8d1e060ca8e937722abbae2b86cfa580db59e91b4c74e7d1659/jill64/eslint-config-svelte"
   },
   "publishConfig": {
     "access": "public"
@@ -37,19 +37,19 @@
     "svelte"
   ],
   "scripts": {
-    "build": "tsc && npx publint",
-    "prepack": "npm run build",
-    "lint": "tsc && npx eslint . && npx depcheck",
-    "format": "npx prettier -w ."
+    "build": "tsc && bunx publint",
+    "prepack": "bun run build",
+    "lint": "tsc && eslint . && bunx depcheck",
+    "format": "bunx prettier -w ."
   },
   "peerDependencies": {
-    "svelte": "^4.0.0 || ^5.0.0"
+    "svelte": "^5.0.0"
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
     "@jill64/prettier-config": "1.0.0",
     "@types/eslint-config-prettier": "6.11.3",
-    "@types/eslint__js": "8.42.3",
+    "@types/eslint__js": "^8.42.3",
     "svelte": "5.16.2",
     "typescript": "5.8.2"
   },
@@ -60,7 +60,7 @@
     "@typescript-eslint/parser": "8.26.0",
     "eslint": "9.22.0",
     "eslint-config-prettier": "10.1.1",
-    "eslint-plugin-svelte": "2.46.1",
+    "eslint-plugin-svelte": "3.1.0",
     "svelte-eslint-parser": "1.0.1"
   }
 }
