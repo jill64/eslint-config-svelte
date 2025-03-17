@@ -1,7 +1,7 @@
 {
   "name": "@jill64/eslint-config-svelte",
   "description": "🔹Pre-Defined ESLint Flat Config for Svelte",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
@@ -60,6 +60,6 @@
     "eslint": "9.22.0",
     "eslint-config-prettier": "10.1.1",
     "eslint-plugin-svelte": "3.2.0",
-    "svelte-eslint-parser": "1.0.1"
+    "svelte-eslint-parser": "1.1.0"
   }
 }
