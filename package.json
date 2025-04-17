@@ -50,7 +50,7 @@
     "@jill64/prettier-config": "1.0.0",
     "@types/eslint-config-prettier": "6.11.3",
     "@types/eslint__js": "8.42.3",
-    "svelte": "5.27.0",
+    "svelte": "5.27.1",
     "typescript": "5.8.2"
   },
   "dependencies": {
