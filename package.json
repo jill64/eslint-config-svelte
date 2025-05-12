@@ -25,7 +25,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/eslint-config-svelte.git",
-    "image": "https://opengraph.githubassets.com/02a3ce4fd5607de3ab18765025da6066e309077cfbcb3531184e9bb2e970130f/jill64/eslint-config-svelte"
+    "image": "https://opengraph.githubassets.com/8e4a543e2ebc1ba842315cfe800597c4de824ea3470edb8808afd992184f4296/jill64/eslint-config-svelte"
   },
   "publishConfig": {
     "access": "public"
@@ -50,7 +50,7 @@
     "@jill64/prettier-config": "1.0.0",
     "@types/eslint-config-prettier": "6.11.3",
     "@types/eslint__js": "8.42.3",
-    "svelte": "5.28.2",
+    "svelte": "5.28.3",
     "typescript": "5.8.2"
   },
   "dependencies": {
